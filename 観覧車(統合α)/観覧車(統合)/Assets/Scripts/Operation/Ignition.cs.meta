@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: c2cc5c8c7c9e30f4c8fef74daac9d6fa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fireMat: {instanceID: 0}
+  - normalMat: {instanceID: 0}
+  - smallFireMat: {instanceID: 0}
+  - bigFireMat: {instanceID: 0}
+  - fireParticle: {fileID: 2974919795831420641, guid: b25b3f90068799643b072d76aeae018a,
+      type: 3}
+  - smallFireParticle: {instanceID: 0}
+  - bigFireParticle: {instanceID: 0}
+  - cursolMat: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

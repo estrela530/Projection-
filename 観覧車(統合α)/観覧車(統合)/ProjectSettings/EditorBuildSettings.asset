@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: "Assets/Scenes/\u30BF\u30A4\u30C8\u30EB.unity"
+    guid: 2578bffd6c4225744b502e0ab864918c
+  - enabled: 1
+    path: Assets/Scenes/StageSelect.unity
+    guid: ea5b66054a457b849af4e754732aa9a2
+  - enabled: 0
+    path: Assets/Scenes/de-suke.unity
+    guid: 29182ec2db56e4346afe6f92d4a40580
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/negi.unity
+    guid: 33ba15a5e7f300842a421a008c86eb96
+  - enabled: 0
+    path: "Assets/Scenes/\u89B3\u89A7\u8ECA.unity"
+    guid: 571335ea01afa6e49958d9c6ebe73bd8
+  - enabled: 0
+    path: Assets/Scenes/End.unity
+    guid: d97ae11f7a9a132438b7679ef6f58346
+  - enabled: 0
+    path: "Assets/Scenes/\u661F.unity"
+    guid: ca61cd6e6036921439537a497384d653
+  - enabled: 0
+    path: Assets/Scenes/Manji.unity
+    guid: 0ca3e6bfc0b80804d98e6237edf77379
+  - enabled: 1
+    path: "Assets/Scenes/\u9CE5\u5C45.unity"
+    guid: ee4ee8e45edeb5844a6ae4d324f37b82
+  - enabled: 0
+    path: Assets/Scenes/Dango.unity
+    guid: d289d2d101296b343b3520528d3aa5fd
+  - enabled: 0
+    path: Assets/Scenes/KanDAISUKE.unity
+    guid: ffb2d7a13c6336641b8f15c1d2710ba6
+  m_configObjects: {}
