@@ -37,11 +37,13 @@ public class Clear : MonoBehaviour
     [SerializeField, Header("クリア関係のCanvas")]
     GameObject ClearCanvas;
 
+    float clearTime;
+
     // Start is called before the first frame update
     void Start()
     {
         isClear = false;
-        ClearCanvas.SetActive(false);
+        //ClearCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -50,23 +52,29 @@ public class Clear : MonoBehaviour
 
         if (PossessionJudge() && SoulAngleJudge() && SoulMoveJudge())
         {
+            clearTime++;
+            Debug.Log("aa");
+        }
+        else if (clearTime < 60)
+        {
+            //clearTime = 0;
+        }
+
+
+        if (clearTime > 60)
+        {
             isClear = true;
         }
-        else
-        {
-            isClear = false;
-        }
 
 
-
-        if (isClear)
-        {
-            ClearCanvas.SetActive(true);
-        }
-        else
-        {
-            ClearCanvas.SetActive(false);
-        }
+        //if (isClear)
+        //{
+        //    ClearCanvas.SetActive(true);
+        //}
+        //else
+        //{
+        //    ClearCanvas.SetActive(false);
+        //}
     }
 
     bool PossessionJudge()
