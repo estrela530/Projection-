@@ -43,7 +43,6 @@ public class Clear : MonoBehaviour
     void Start()
     {
         isClear = false;
-        //ClearCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -53,11 +52,10 @@ public class Clear : MonoBehaviour
         if (PossessionJudge() && SoulAngleJudge() && SoulMoveJudge())
         {
             clearTime++;
-            Debug.Log("aa");
         }
         else if (clearTime < 60)
         {
-            //clearTime = 0;
+            clearTime = 0;
         }
 
 
@@ -65,16 +63,6 @@ public class Clear : MonoBehaviour
         {
             isClear = true;
         }
-
-
-        //if (isClear)
-        //{
-        //    ClearCanvas.SetActive(true);
-        //}
-        //else
-        //{
-        //    ClearCanvas.SetActive(false);
-        //}
     }
 
     bool PossessionJudge()
