@@ -4239,8 +4239,8 @@ MonoBehaviour:
   answerPossessionAngle: {x: 16.48, y: 357.01, z: -0.923}
   answerSoulAngleX: 0
   answerSoulMoveX: -338.1592
-  errorRangeSoulAngleX: 0
-  errorRangeSoulMoveX: 0
+  errorRangeSoulAngleX: 360
+  errorRangeSoulMoveX: 10
   possession: {fileID: 1726276559}
   soul: {fileID: 239779615}
   ClearCanvas: {fileID: 763799097}
@@ -4257,7 +4257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 763799098}
-  animatorParameters: Open
+  animatorParameters: OpenTrigger
   nextScene: 6
   titleScene: 0
   stageScene: 1
