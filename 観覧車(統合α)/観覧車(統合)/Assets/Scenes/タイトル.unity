@@ -4068,6 +4068,7 @@ GameObject:
   - component: {fileID: 1390540039}
   - component: {fileID: 1390540040}
   - component: {fileID: 1390540041}
+  - component: {fileID: 1390540042}
   m_Layer: 8
   m_Name: "\u5916\u5468\u90E8"
   m_TagString: Pedestal
@@ -4173,6 +4174,25 @@ MonoBehaviour:
   maxAngle: 90
   minRange: 150
   minAngle: 80
+--- !u!95 &1390540042
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390540035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3989c2abce34d354088c7b9890ea85c6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1401854488
 GameObject:
   m_ObjectHideFlags: 0
