@@ -24,18 +24,12 @@ public class AnimationClearUI : MonoBehaviour
     [SerializeField]
     Clear clear;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         if (clear.GetClearFlag())
         {
-            animator.SetBool(animatorParameters, true);
+            animator.SetTrigger(animatorParameters);
         }
     }
 
