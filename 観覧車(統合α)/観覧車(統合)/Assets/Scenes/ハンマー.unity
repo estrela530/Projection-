@@ -3738,12 +3738,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 90
+  errorRangePossession: 1
   answerPossessionAngle: {x: 16.48, y: 357.01, z: -0.923}
   answerSoulAngleX: 0
   answerSoulMoveX: -338.1592
-  errorRangeSoulAngleX: 0
-  errorRangeSoulMoveX: 0
+  errorRangeSoulAngleX: 360
+  errorRangeSoulMoveX: 10
   possession: {fileID: 541348798}
   soul: {fileID: 461111894}
   ClearCanvas: {fileID: 2006578945}
@@ -3760,7 +3760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2006578946}
-  animatorParameters: Open
+  animatorParameters: OpenTrigger
   nextScene: 6
   titleScene: 0
   stageScene: 1
