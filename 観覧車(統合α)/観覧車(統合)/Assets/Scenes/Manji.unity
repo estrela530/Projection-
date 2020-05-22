@@ -6547,7 +6547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1765921549}
-  animatorParameters: Open
+  animatorParameters: OpenTrigger
   nextScene: 3
   titleScene: 0
   stageScene: 1
