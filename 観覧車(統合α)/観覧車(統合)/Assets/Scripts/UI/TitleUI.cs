@@ -7,11 +7,48 @@ public class TitleUI : MonoBehaviour
 {
     [SerializeField, Header("ステージ選択のシーン番号")]
     int stageSelectScene;
-    
+
+    [SerializeField]
+    float startSeconds = 0;
+
+    [SerializeField]
+    private Animator animator;
+
+    [SerializeField]
+    bool isStart = false;
 
     public void OnClickPlay()
     {
-        SceneManager.LoadScene(stageSelectScene);
+        isStart = true;
+
+        //if (isStart == true)
+        //{
+        //    startSeconds +=(int)Time.deltaTime;
+        //}
+
+        //if (startSeconds >= 3)
+        //{
+        //    MoveScene();
+        //}
+    }
+
+    public void MoveScene()
+    {
+        if (isStart == true)
+        {
+            startSeconds += Time.deltaTime;
+
+            if (startSeconds >= 3)
+            {
+                SceneManager.LoadScene(stageSelectScene);
+                Debug.Log("きた");
+            }
+        }
+    }
+
+    void Update()
+    {
+        MoveScene();
     }
 
     public void OnClickEnd()
