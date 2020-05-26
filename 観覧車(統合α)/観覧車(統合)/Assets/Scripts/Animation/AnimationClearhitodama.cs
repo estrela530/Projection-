@@ -9,10 +9,10 @@ public class AnimationClearhitodama : MonoBehaviour
     //GameObject hitodama;
     [SerializeField]
     Vector3 animationStartPosition;
-    private bool isStart;
     [SerializeField]
     private Animator animator;
-    const string animName = "AnimationClearhitodama";
+    [SerializeField]
+    string animName;
     public Clear cl;
 
     [SerializeField]
@@ -25,7 +25,6 @@ public class AnimationClearhitodama : MonoBehaviour
         //hitodama = GameObject.Find("外周部");
         //animator = hitodamaObject.AddComponent<Animator>();
         animationStartPosition = new Vector3(0, 0, 0);
-        isStart = false;
     }
 
     // Update is called once per frame
@@ -36,16 +35,8 @@ public class AnimationClearhitodama : MonoBehaviour
         if (cl.isClear == true)
         {
             animationStartPosition = cl.clearPosition;
-            isStart = true;
-        }
-
-        if (isStart)
-        {
             animator.SetBool(animName, true);
-
-            //animator.transform.localPosition = animationStartPosition;
-            //animator.Play(animName);
-
         }
+
     }
 }
