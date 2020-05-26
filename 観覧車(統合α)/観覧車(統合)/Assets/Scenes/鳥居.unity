@@ -291,9 +291,9 @@ MonoBehaviour:
   errorRangeSoulMoveX: 1000
   possession: {fileID: 992499084}
   soul: {fileID: 402710126}
+  lig: {fileID: 109778038}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
-  ClearCanvas: {fileID: 395572896}
 --- !u!114 &10021563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,6 +784,11 @@ PrefabInstance:
       propertyPath: cl
       value: 
       objectReference: {fileID: 10021562}
+    - target: {fileID: 752074807290029588, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: animName
+      value: animStart
+      objectReference: {fileID: 0}
     - target: {fileID: 752074807290029589, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: nearBlock
@@ -856,6 +861,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 882fc1cfb618dad428669185912f0870, type: 3}
+--- !u!1 &109778038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 752074805878677116, guid: 882fc1cfb618dad428669185912f0870,
+    type: 3}
+  m_PrefabInstance: {fileID: 109778037}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &115751691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1119153072144668753, guid: a45a67469c4304f43a4af012afe1ca68,
