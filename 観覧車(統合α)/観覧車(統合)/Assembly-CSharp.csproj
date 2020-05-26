@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Animation\AnimationClearUI.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationClearhitodama.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationGoTitleUI.cs" />
+    <Compile Include="Assets\Scripts\Animation\AnimationHintUI.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationMenuUI.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationMenuUIButton.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationResetUI.cs" />
