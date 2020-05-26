@@ -31,6 +31,8 @@ public class Clear : MonoBehaviour
     [SerializeField, Header("魂(外周部の親のオブジェクト)")]
     GameObject soul;
 
+    [SerializeField, Header("SpotLightを入れてね")]
+    GameObject lig;
 
     public bool isClear;
     public Vector3 clearPosition;
@@ -50,6 +52,7 @@ public class Clear : MonoBehaviour
         if (PossessionJudge() && SoulAngleJudge() && SoulMoveJudge())
         {
             isClear = true;
+            lig.transform.parent = null;
         }
         else
         {
