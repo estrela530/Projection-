@@ -849,7 +849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360561872}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -373.7, y: 1.4, z: 336.9}
+  m_LocalPosition: {x: -341.15, y: 1.4, z: 336.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5226,6 +5226,7 @@ MonoBehaviour:
   errorRangeSoulMoveX: 10
   possession: {fileID: 4445837310945084828}
   soul: {fileID: 7059477957548319421}
+  lig: {fileID: 7059477958276127454}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
 --- !u!33 &2383674615700454617
@@ -6548,7 +6549,7 @@ SphereCollider:
   m_GameObject: {fileID: 7059477957429970878}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
@@ -6637,7 +6638,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7059477957548319421}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edd47d267b2002e4188e121b6608f0bb, type: 3}
   m_Name: 
@@ -6645,6 +6646,7 @@ MonoBehaviour:
   hitodamaObject: {fileID: 7059477957548319421}
   animationStartPosition: {x: 0, y: 0, z: 0}
   animator: {fileID: 7059477957548319418}
+  animName: animStart
   cl: {fileID: 2257423317186569323}
 --- !u!114 &7059477957548319415
 MonoBehaviour:
@@ -6705,7 +6707,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7059477957548319421}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: dd8c7d9f88ce5a343ab9d5067112138e, type: 2}
   m_CullingMode: 0
