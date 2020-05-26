@@ -5000,7 +5000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2257423316840217095
 Transform:
   m_ObjectHideFlags: 0
@@ -5079,15 +5079,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 360
-  answerPossessionAngle: {x: 0, y: 0, z: 0}
+  errorRangePossession: 15.29
+  answerPossessionAngle: {x: -5, y: 34, z: 87}
   answerSoulAngleX: 360
-  answerSoulMoveX: -338
+  answerSoulMoveX: -312
   errorRangeSoulAngleX: 360
-  errorRangeSoulMoveX: 500
+  errorRangeSoulMoveX: 20
   possession: {fileID: 4445837310945084828}
-  soul: {fileID: 1390540035}
-  isClear: 0
+  soul: {fileID: 6234756097924906741}
+  isClear: 1
   clearPosition: {x: 0, y: 0, z: 0}
   ClearCanvas: {fileID: 2257423316140624740}
 --- !u!23 &2487844356439280840
@@ -5305,14 +5305,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4445837310945084828}
-  m_LocalRotation: {x: 0.09363407, y: 0.09363407, z: 0.70087993, w: 0.70087993}
-  m_LocalPosition: {x: -362.16656, y: -12.1, z: 331.85846}
+  m_LocalRotation: {x: -0.16060923, y: 0.010754987, z: 0.6886252, w: 0.707025}
+  m_LocalPosition: {x: -360.35886, y: -12.1, z: 333.03244}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 9176145432327796595}
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 15.219001, z: 90.00001}
+  m_LocalEulerAnglesHint: {x: -14, y: -12.257001, z: 90.00001}
 --- !u!23 &5212982895156742017
 MeshRenderer:
   m_ObjectHideFlags: 0

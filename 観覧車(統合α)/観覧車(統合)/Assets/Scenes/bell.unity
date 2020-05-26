@@ -5620,7 +5620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2257423316840217095
 Transform:
   m_ObjectHideFlags: 0
@@ -5699,12 +5699,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 360
+  errorRangePossession: 20
   answerPossessionAngle: {x: 0, y: 0, z: 0}
-  answerSoulAngleX: 360
-  answerSoulMoveX: -338
-  errorRangeSoulAngleX: 360
-  errorRangeSoulMoveX: 500
+  answerSoulAngleX: 0
+  answerSoulMoveX: -327
+  errorRangeSoulAngleX: 10
+  errorRangeSoulMoveX: 10
   possession: {fileID: 4445837310945084828}
   soul: {fileID: 1390540035}
   isClear: 0
