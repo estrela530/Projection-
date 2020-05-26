@@ -1016,11 +1016,11 @@ MonoBehaviour:
   intrans: {fileID: 239779616}
   sha: {fileID: 941947748}
   shadow:
-  - {fileID: 782828995}
-  - {fileID: 40646800}
-  - {fileID: 494805473}
-  - {fileID: 2022569249}
-  - {fileID: 700980696}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &239779620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2544,7 +2544,7 @@ PrefabInstance:
     - target: {fileID: 4445837312200107586, guid: 5a5812b7284fe9942b71500bd99ac4e6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4445837312200107586, guid: 5a5812b7284fe9942b71500bd99ac4e6,
         type: 3}
@@ -2610,11 +2610,11 @@ MonoBehaviour:
   intrans: {fileID: 567785055}
   sha: {fileID: 0}
   shadow:
-  - {fileID: 782828995}
-  - {fileID: 40646800}
-  - {fileID: 494805473}
-  - {fileID: 2022569249}
-  - {fileID: 700980696}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &567785057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5684,7 +5684,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1295734803
 GameObject:
@@ -7910,7 +7910,7 @@ Transform:
   - {fileID: 1576613546}
   - {fileID: 356038106}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1952276239
 PrefabInstance:
@@ -8171,7 +8171,7 @@ PrefabInstance:
     - target: {fileID: 3571555609174659240, guid: 267d760fca62fb54590a16a5898f9641,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3571555609174659240, guid: 267d760fca62fb54590a16a5898f9641,
         type: 3}
@@ -9164,7 +9164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2100819280
 Transform:
   m_ObjectHideFlags: 0
@@ -9191,12 +9191,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 20
-  answerPossessionAngle: {x: -33.48, y: 42.67, z: -28.54}
-  answerSoulAngleX: 0
-  answerSoulMoveX: -349.55
-  errorRangeSoulAngleX: 30
-  errorRangeSoulMoveX: 30
+  errorRangePossession: 3
+  answerPossessionAngle: {x: -15.32, y: 165.02, z: -1.71}
+  answerSoulAngleX: -105.96
+  answerSoulMoveX: -305.35
+  errorRangeSoulAngleX: 360
+  errorRangeSoulMoveX: 10
   possession: {fileID: 292751787}
   soul: {fileID: 239779615}
   isClear: 0
