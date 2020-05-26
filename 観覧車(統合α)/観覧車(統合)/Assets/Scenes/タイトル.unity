@@ -2266,6 +2266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageSelectScene: 1
+  animator: {fileID: 1390540042}
 --- !u!4 &638219045
 Transform:
   m_ObjectHideFlags: 0
@@ -4184,7 +4185,7 @@ Animator:
   m_GameObject: {fileID: 1390540035}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3989c2abce34d354088c7b9890ea85c6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5160b4aa91c56a841b58dc2a2be89d5c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6947,6 +6948,8 @@ MonoBehaviour:
   errorRangeSoulMoveX: 500
   possession: {fileID: 4445837310945084828}
   soul: {fileID: 1390540035}
+  isClear: 0
+  clearPosition: {x: 0, y: 0, z: 0}
   ClearCanvas: {fileID: 2257423316140624740}
 --- !u!65 &2315253158448769451
 BoxCollider:

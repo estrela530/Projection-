@@ -13,8 +13,8 @@ public class ClearManager : MonoBehaviour
     [SerializeField, Header("鎮火状態でクリアの台座のリスト")]
     List<IgnitStatus> ClearPedestals;
 
-    [SerializeField,Header("クリア関係のCanvas")]
-    GameObject ClearCanvas;
+    //[SerializeField,Header("クリア関係のCanvas")]
+    //GameObject ClearCanvas;
 
     [SerializeField, Header("モードマネージャー")]
     ModeManager modeManager;
@@ -29,7 +29,7 @@ public class ClearManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ClearCanvas.SetActive(false);
+        //ClearCanvas.SetActive(false);
         for (int i = 0; i < FireSizeList.Count; i++)
         {
             if (FireSizeList[i] > ignitManager.GetMaxSize())
@@ -51,7 +51,7 @@ public class ClearManager : MonoBehaviour
         {
             if (!FirePedestals[i].GetIgnit() || FireSizeList[i] != FirePedestals[i].GetFireSize())
             {
-                ClearCanvas.SetActive(false);
+                //ClearCanvas.SetActive(false);
                 return;
             }
         }
@@ -61,7 +61,7 @@ public class ClearManager : MonoBehaviour
         {
             if (ClearPedestals[i].GetIgnit())
             {
-                ClearCanvas.SetActive(false);
+                //ClearCanvas.SetActive(false);
                 return;
             }
         }
@@ -78,28 +78,28 @@ public class ClearManager : MonoBehaviour
             case 1:
                 if(modeManager.NowOutMode() != clear)
                 {
-                    ClearCanvas.SetActive(false);
+                    //ClearCanvas.SetActive(false);
                     return;
                 }
                 break;
             case 2:
                 if (modeManager.NowOutMode() != clear)
                 {
-                    ClearCanvas.SetActive(false);
+                    //ClearCanvas.SetActive(false);
                     return;
                 }
                 break;
             case 3:
                 if (modeManager.NowOutMode() != clear)
                 {
-                    ClearCanvas.SetActive(false);
+                   //ClearCanvas.SetActive(false);
                     return;
                 }
                 break;
             case 4:
                 if (modeManager.NowOutMode() != clear)
                 {
-                    ClearCanvas.SetActive(false);
+                    //ClearCanvas.SetActive(false);
                     return;
                 }
                 break;
@@ -107,7 +107,7 @@ public class ClearManager : MonoBehaviour
                 break;
         }
 
-        ClearCanvas.SetActive(true);
+        //ClearCanvas.SetActive(true);
         //SceneManager.LoadSceneAsync(nextSceneNum);
     }
 }
