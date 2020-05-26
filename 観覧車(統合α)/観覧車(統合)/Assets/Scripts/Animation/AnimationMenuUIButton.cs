@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimationMenuUIButton : MonoBehaviour
 {
-    [SerializeField,Header("ResetCanvas")]
+    [SerializeField, Header("ResetCanvas")]
     Animator resetAnimator;
 
     [SerializeField, Header("TitleCanvas")]
@@ -28,6 +28,8 @@ public class AnimationMenuUIButton : MonoBehaviour
     [SerializeField]
     AnimationMenuUI anim;
 
+    [SerializeField]
+    int count = 0;
     // Update is called once per frame
     void Update()
     {
@@ -38,7 +40,7 @@ public class AnimationMenuUIButton : MonoBehaviour
         }
 
 
-        if (!resetAnimator.GetBool(resetAnimatorParameters) && !titleAnimator.GetBool(titleAnimatorParameters) && !hintAnimator.GetBool(hintAnimatorParameters)&& anim != null)
+        if (!resetAnimator.GetBool(resetAnimatorParameters) && !titleAnimator.GetBool(titleAnimatorParameters) && !hintAnimator.GetBool(hintAnimatorParameters) && anim != null)
         {
             anim.enabled = true;
         }
@@ -67,7 +69,6 @@ public class AnimationMenuUIButton : MonoBehaviour
     {
         titleAnimator.SetBool(titleAnimatorParameters, true);
 
-
         if (anim != null)
         {
             anim.enabled = false;
@@ -76,8 +77,18 @@ public class AnimationMenuUIButton : MonoBehaviour
 
     public void HintButtonDown()
     {
-        hintAnimator.SetBool(hintAnimatorParameters, true);
 
+        if (count >= 0 && count < 2)
+        {
+            hintAnimator.SetBool(hintAnimatorParameters, true);
+            count += 1;
+        }
+
+        else if (count == 2)
+        {
+            hintAnimator.SetBool(hintAnimatorParameters, false);
+            count = 0;
+        }
 
         if (anim != null)
         {

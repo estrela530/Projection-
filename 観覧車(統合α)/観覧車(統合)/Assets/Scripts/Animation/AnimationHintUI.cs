@@ -29,4 +29,9 @@ public class AnimationHintUI : MonoBehaviour
             animator.SetBool(animatorParameters, !animator.GetBool(animatorParameters));
         }
     }
+    public void HintFinish()
+    {
+        animator.SetBool(animatorParameters, false);
+    }
+
 }
