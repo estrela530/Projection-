@@ -30,14 +30,29 @@ EditorBuildSettings:
     path: Assets/Scenes/End.unity
     guid: d97ae11f7a9a132438b7679ef6f58346
   - enabled: 0
-    path: "Assets/Scenes/\u661F.unity"
-    guid: ca61cd6e6036921439537a497384d653
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/Manji.unity
     guid: 0ca3e6bfc0b80804d98e6237edf77379
   - enabled: 1
     path: "Assets/Scenes/\u9CE5\u5C45.unity"
     guid: ee4ee8e45edeb5844a6ae4d324f37b82
+  - enabled: 1
+    path: "Assets/Scenes/\u5BB6 1.unity"
+    guid: 5f7adc7a33730454ea8be45d4b4de87d
+  - enabled: 1
+    path: Assets/Scenes/bell.unity
+    guid: 9b780caf88362b44fbef5bef69c31fc0
+  - enabled: 1
+    path: Assets/Scenes/negiStage.unity
+    guid: 802ddaf02bd8e01449ce1ec39d170d14
+  - enabled: 1
+    path: "Assets/Scenes/\u30CF\u30F3\u30DE\u30FC.unity"
+    guid: fd64a27934b89d145ad41b5044b55a13
+  - enabled: 1
+    path: "Assets/Scenes/\u30B9\u30B3\u30C3\u30D7.unity"
+    guid: 2264397d0107ad842ba3c98aea337d02
   - enabled: 0
     path: Assets/Scenes/Dango.unity
     guid: d289d2d101296b343b3520528d3aa5fd
