@@ -3676,6 +3676,7 @@ MonoBehaviour:
   errorRangeSoulMoveX: 10
   possession: {fileID: 541348798}
   soul: {fileID: 1149181107}
+  lig: {fileID: 849229841}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &662147581
@@ -4071,6 +4072,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791413339}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &849229841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 752074805878677116, guid: 882fc1cfb618dad428669185912f0870,
+    type: 3}
+  m_PrefabInstance: {fileID: 1149181106}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &858723322
 GameObject:
   m_ObjectHideFlags: 0
