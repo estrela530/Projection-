@@ -273,6 +273,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 31665790}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &99681942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 752074807239279388, guid: 882fc1cfb618dad428669185912f0870,
+    type: 3}
+  m_PrefabInstance: {fileID: 169013985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &107529023
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,17 +425,17 @@ PrefabInstance:
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -324.8591
+      value: -321.1
       objectReference: {fileID: 0}
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 18.4
       objectReference: {fileID: 0}
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 334.2552
+      value: 338.1
       objectReference: {fileID: 0}
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
@@ -797,7 +803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281183833}
   m_LocalRotation: {x: 0.21004522, y: -0, z: -0, w: 0.9776917}
-  m_LocalPosition: {x: 16.7, y: -2.6, z: -1.1}
+  m_LocalPosition: {x: 16.7, y: -2.6, z: -2.78}
   m_LocalScale: {x: 1, y: 3.74, z: 6.2799993}
   m_Children: []
   m_Father: {fileID: 1317808361}
@@ -1702,7 +1708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374145340}
   m_LocalRotation: {x: 0.5391383, y: -0, z: -0, w: 0.84221727}
-  m_LocalPosition: {x: 4.899994, y: 4.1, z: 1.4}
+  m_LocalPosition: {x: 4.899994, y: 3.31, z: 6.97}
   m_LocalScale: {x: 1, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1830355469}
@@ -2256,6 +2262,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 883237941}
   animatorParameters: Open
+--- !u!1 &602563339 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 752074807290029599, guid: 882fc1cfb618dad428669185912f0870,
+    type: 3}
+  m_PrefabInstance: {fileID: 169013985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &620481819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2553,15 +2565,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 10
-  answerPossessionAngle: {x: 0.79, y: 3.36, z: -1.4}
-  answerSoulAngleX: 35.14
-  answerSoulMoveX: -324.8591
+  errorRangePossession: 8
+  answerPossessionAngle: {x: -3.98, y: -7.23, z: 0.38}
+  answerSoulAngleX: -34.6
+  answerSoulMoveX: -321.1
   errorRangeSoulAngleX: 360
   errorRangeSoulMoveX: 10
   possession: {fileID: 1830355465}
-  soul: {fileID: 1238853207}
-  lig: {fileID: 0}
+  soul: {fileID: 602563339}
+  lig: {fileID: 99681942}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &749169662
@@ -4436,7 +4448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317808360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -383.4, y: 9.4, z: 321.72}
+  m_LocalPosition: {x: -383.4, y: 7.7, z: 323.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 281183834}
@@ -5027,12 +5039,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: a36b5894b2d16b64cb618ea0673425cb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.85
+      value: -4.54
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a36b5894b2d16b64cb618ea0673425cb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.22
+      value: -5.71
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a36b5894b2d16b64cb618ea0673425cb,
         type: 3}
@@ -6769,7 +6781,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830355465}
   m_LocalRotation: {x: 0, y: 0.2588191, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: -375.3, y: 15.4, z: 328.9}
+  m_LocalPosition: {x: -375.3, y: 15.4, z: 319.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 322901855}
@@ -7494,8 +7506,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetAnimator: {fileID: 1718317153}
   titleAnimator: {fileID: 883237941}
+  hintAnimator: {fileID: 0}
   resetAnimatorParameters: Open
   titleAnimatorParameters: Open
+  hintAnimatorParameters: 
   clear: {fileID: 749169661}
   anim: {fileID: 2018421186}
 --- !u!1 &2086675867
