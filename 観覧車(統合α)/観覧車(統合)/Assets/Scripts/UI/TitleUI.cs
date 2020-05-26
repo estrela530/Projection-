@@ -17,6 +17,9 @@ public class TitleUI : MonoBehaviour
     [SerializeField]
     bool isStart = false;
 
+    [SerializeField]
+    string animName;
+
     public void OnClickPlay()
     {
         isStart = true;
@@ -36,6 +39,8 @@ public class TitleUI : MonoBehaviour
     {
         if (isStart == true)
         {
+            animator.SetBool(animName, true);
+
             startSeconds += Time.deltaTime;
 
             if (startSeconds >= 3)
