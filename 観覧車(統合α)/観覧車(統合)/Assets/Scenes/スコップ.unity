@@ -386,6 +386,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 752074807239279390, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 752074807290029588, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: cl
@@ -406,10 +411,15 @@ PrefabInstance:
       propertyPath: farBlock
       value: 
       objectReference: {fileID: 980972629}
+    - target: {fileID: 752074807290029592, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -338.15924
+      value: -324.8591
       objectReference: {fileID: 0}
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}

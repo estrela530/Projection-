@@ -10,11 +10,17 @@ public class AnimationMenuUIButton : MonoBehaviour
     [SerializeField, Header("TitleCanvas")]
     Animator titleAnimator;
 
+    [SerializeField, Header("HintCanvas")]
+    Animator hintAnimator;
+
     [SerializeField]
     string resetAnimatorParameters;
 
     [SerializeField]
     string titleAnimatorParameters;
+
+    [SerializeField]
+    string hintAnimatorParameters;
 
     [SerializeField]
     Clear clear;
@@ -25,14 +31,14 @@ public class AnimationMenuUIButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (resetAnimator == null || titleAnimator == null)
+        if (resetAnimator == null || titleAnimator == null || hintAnimator == null)
         {
             Debug.Log("MenuUIButtonに足りていないものがあります");
             return;
         }
 
 
-        if (!resetAnimator.GetBool(resetAnimatorParameters) && !titleAnimator.GetBool(titleAnimatorParameters) && anim != null)
+        if (!resetAnimator.GetBool(resetAnimatorParameters) && !titleAnimator.GetBool(titleAnimatorParameters) && !hintAnimator.GetBool(hintAnimatorParameters)&& anim != null)
         {
             anim.enabled = true;
         }
@@ -67,4 +73,19 @@ public class AnimationMenuUIButton : MonoBehaviour
             anim.enabled = false;
         }
     }
+
+    public void HintButtonDown()
+    {
+        hintAnimator.SetBool(hintAnimatorParameters, true);
+
+
+        if (anim != null)
+        {
+            anim.enabled = false;
+        }
+    }
 }
+
+
+
+
