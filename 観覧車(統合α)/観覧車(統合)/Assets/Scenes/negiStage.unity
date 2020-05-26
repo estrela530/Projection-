@@ -836,7 +836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b91f4970bd6b4ce490e72b8f4797b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _density: 100
+  _density: 2
   _extent: {x: 230, y: 64.9}
   _offset: {x: 0, y: 0}
   _randomPitchAngle: 45
@@ -1432,8 +1432,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetAnimator: {fileID: 6899172105108491480}
   titleAnimator: {fileID: 1172148346}
+  hintAnimator: {fileID: 0}
   resetAnimatorParameters: Open
   titleAnimatorParameters: Open
+  hintAnimatorParameters: 
   clear: {fileID: 2257423317186569323}
   anim: {fileID: 466594345}
 --- !u!114 &466594345
