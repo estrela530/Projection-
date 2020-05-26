@@ -5866,6 +5866,7 @@ MonoBehaviour:
   errorRangeSoulMoveX: 20
   possession: {fileID: 4445837310945084828}
   soul: {fileID: 6234756097924906741}
+  lig: {fileID: 6234756097083836054}
   isClear: 1
   clearPosition: {x: 0, y: 0, z: 0}
 --- !u!33 &2608987976581377639
@@ -6780,6 +6781,7 @@ MonoBehaviour:
   hitodamaObject: {fileID: 6234756097924906741}
   animationStartPosition: {x: 0, y: 0, z: 0}
   animator: {fileID: 6234756097924906738}
+  animName: animStart
   cl: {fileID: 2257423317186569323}
 --- !u!114 &6234756097924906751
 MonoBehaviour:
