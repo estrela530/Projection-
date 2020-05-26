@@ -32,17 +32,15 @@ public class Clear : MonoBehaviour
     GameObject soul;
 
 
-    bool isClear;
-
-    [SerializeField, Header("クリア関係のCanvas")]
-    GameObject ClearCanvas;
-
-    float clearTime;
+    public bool isClear;
+    public Vector3 clearPosition;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         isClear = false;
+        clearPosition = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
@@ -51,17 +49,18 @@ public class Clear : MonoBehaviour
 
         if (PossessionJudge() && SoulAngleJudge() && SoulMoveJudge())
         {
-            clearTime++;
-        }
-        else if (clearTime < 60)
-        {
-            clearTime = 0;
-        }
-
-
-        if (clearTime > 60)
-        {
             isClear = true;
+        }
+        else
+        {
+            isClear = false;
+        }
+
+
+
+        if (!isClear)
+        {
+            clearPosition = transform.position;
         }
     }
 
@@ -79,35 +78,21 @@ public class Clear : MonoBehaviour
 
     bool SoulAngleJudge()
     {
-        var answerSoulRot =
-            new Vector3(
-                answerSoulAngleX,
-                soul.transform.rotation.y,
-                soul.transform.rotation.z);
-
-        var answer_rot = Quaternion.Euler(answerSoulRot);
-        if (Quaternion.Angle(soul.transform.rotation, answer_rot) <= errorRangeSoulAngleX)
+        if (Mathf.Abs(soul.transform.rotation.x - answerSoulAngleX) < errorRangeSoulAngleX)
         {
             return true;
         }
-
         return false;
     }
 
 
     bool SoulMoveJudge()
     {
-        var answerSoulMove =
-            new Vector3(
-                answerSoulMoveX,
-                soul.transform.position.y,
-                soul.transform.position.z);
 
-        if (Vector3.Distance(answerSoulMove, soul.transform.position) <= errorRangeSoulMoveX)
+        if (Mathf.Abs(soul.transform.position.x - answerSoulMoveX) < errorRangeSoulMoveX)
         {
             return true;
         }
-
         return false;
     }
 

@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\360\Rotate360.cs" />
     <Compile Include="Assets\Scripts\360\Shadow360.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationClearUI.cs" />
+    <Compile Include="Assets\Scripts\Animation\AnimationClearhitodama.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationGoTitleUI.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationMenuUI.cs" />
     <Compile Include="Assets\Scripts\Animation\AnimationMenuUIButton.cs" />
