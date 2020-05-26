@@ -3669,7 +3669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   errorRangePossession: 5
-  answerPossessionAngle: {x: 16.48, y: 357.01, z: -0.923}
+  answerPossessionAngle: {x: 16.48, y: 357.01, z: 4.6}
   answerSoulAngleX: 0
   answerSoulMoveX: -338.1592
   errorRangeSoulAngleX: 360
@@ -7206,7 +7206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1967456303
 Transform:
   m_ObjectHideFlags: 0
@@ -7258,7 +7258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2006578946}
   animatorParameters: OpenTrigger
-  nextScene: 6
+  nextScene: 7
   titleScene: 0
   stageScene: 1
   clear: {fileID: 1967456304}
@@ -7808,6 +7808,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 1456289693974313493, guid: 798dda3ccff6e864c805b42215b5083c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1456289693974313498, guid: 798dda3ccff6e864c805b42215b5083c,
         type: 3}
       propertyPath: cl
@@ -7823,5 +7828,10 @@ PrefabInstance:
       propertyPath: farBlock
       value: 
       objectReference: {fileID: 1225412885}
+    - target: {fileID: 1456289693991231248, guid: 798dda3ccff6e864c805b42215b5083c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 798dda3ccff6e864c805b42215b5083c, type: 3}
