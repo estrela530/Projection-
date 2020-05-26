@@ -22,6 +22,6 @@ Material:
     m_Floats:
     - _HorizonSize: 1
     m_Colors:
-    - _GroundColor: {r: 0.369, g: 0.349, b: 0.341, a: 1}
-    - _HorizonColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SkyTint: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+    - _GroundColor: {r: 0.5771357, g: 1, b: 0, a: 1}
+    - _HorizonColor: {r: 0, g: 0.19573446, b: 0.8679245, a: 1}
+    - _SkyTint: {r: 0.25, g: 0.296875, b: 1, a: 1}
