@@ -43,7 +43,7 @@ public class TitleUI : MonoBehaviour
 
             startSeconds += Time.deltaTime;
 
-            if (startSeconds >= 3)
+            if (startSeconds >= 0.5)
             {
                 SceneManager.LoadScene(stageSelectScene);
                 Debug.Log("きた");

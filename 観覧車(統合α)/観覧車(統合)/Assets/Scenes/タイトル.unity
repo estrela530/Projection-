@@ -1498,10 +1498,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetAnimator: {fileID: 6899172105108491480}
   titleAnimator: {fileID: 1172148346}
+  hintAnimator: {fileID: 0}
   resetAnimatorParameters: Open
   titleAnimatorParameters: Open
+  hintAnimatorParameters: 
   clear: {fileID: 0}
   anim: {fileID: 466594345}
+  count: 0
 --- !u!114 &466594345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2266,7 +2269,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageSelectScene: 1
+  startSeconds: 0
   animator: {fileID: 1390540042}
+  isStart: 0
+  animName: start
 --- !u!4 &638219045
 Transform:
   m_ObjectHideFlags: 0
@@ -3222,7 +3228,6 @@ MonoBehaviour:
   FireSizeList: 02000000020000000200000002000000
   ClearPedestals:
   - {fileID: 0}
-  ClearCanvas: {fileID: 2257423316140624740}
   modeManager: {fileID: 3571555609861087504, guid: 267d760fca62fb54590a16a5898f9641,
     type: 3}
   clearNum: 2
@@ -6948,9 +6953,9 @@ MonoBehaviour:
   errorRangeSoulMoveX: 500
   possession: {fileID: 4445837310945084828}
   soul: {fileID: 1390540035}
+  lig: {fileID: 0}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
-  ClearCanvas: {fileID: 2257423316140624740}
 --- !u!65 &2315253158448769451
 BoxCollider:
   m_ObjectHideFlags: 0
