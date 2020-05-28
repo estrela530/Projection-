@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Scenes/\u30BF\u30A4\u30C8\u30EB.unity"
     guid: 2578bffd6c4225744b502e0ab864918c
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/\u30BF\u30A4\u30C8\u30EBAnim.unity"
     guid: 60046e0e53c485444acad8f434f76227
   - enabled: 1
