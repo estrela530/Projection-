@@ -3239,10 +3239,10 @@ MonoBehaviour:
   hintAnimator: {fileID: 2113420530}
   resetAnimatorParameters: Open
   titleAnimatorParameters: Open
+  hintOpenAnimatorParameters: 
   hintAnimatorParameters: HintOpen
   clear: {fileID: 2257423317186569323}
   anim: {fileID: 1429246581}
-  count: 0
 --- !u!1 &1441763328
 GameObject:
   m_ObjectHideFlags: 0

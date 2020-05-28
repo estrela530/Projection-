@@ -20,7 +20,11 @@ public class AnimationMenuUIButton : MonoBehaviour
     string titleAnimatorParameters;
 
     [SerializeField]
+    string hintOpenAnimatorParameters;
+
+    [SerializeField]
     string hintAnimatorParameters;
+
 
     [SerializeField]
     Clear clear;
@@ -28,8 +32,9 @@ public class AnimationMenuUIButton : MonoBehaviour
     [SerializeField]
     AnimationMenuUI anim;
 
-    [SerializeField]
-    int count = 0;
+    bool IsAnim = false;
+    int hint = 0;
+
     // Update is called once per frame
     void Update()
     {
@@ -77,18 +82,48 @@ public class AnimationMenuUIButton : MonoBehaviour
 
     public void HintButtonDown()
     {
+        Debug.Log("Hintボタン押されたよ");
 
-        if (count >= 0 && count < 2)
+        switch (hintAnimator.GetBool(hintAnimatorParameters))
         {
-            hintAnimator.SetBool(hintAnimatorParameters, true);
-            count += 1;
+            case true:
+                hintAnimator.SetBool(hintAnimatorParameters, false);
+                break;
+            case false:
+                hintAnimator.SetBool(hintAnimatorParameters, true);
+                break;
         }
 
-        else if (count == 2)
-        {
-            hintAnimator.SetBool(hintAnimatorParameters, false);
-            count = 0;
-        }
+        //if (hintAnimator.GetBool(hintAnimatorParameters) == true)
+        //{
+        //    hint = 0;
+        //}
+        //else if (hintAnimator.GetBool(hintAnimatorParameters) == false)
+        //{
+        //    hint = 1;
+        //}
+
+        //switch (hint)
+        //{
+        //    case 0:
+        //        hintAnimator.SetBool(hintAnimatorParameters, false);
+        //        break;
+        //    case 1:
+        //        hintAnimator.SetBool(hintAnimatorParameters, true);
+        //        break;
+        //}
+
+        //if (hintAnimator.GetBool(hintAnimatorParameters) == true)
+        //{
+        //    hintAnimator.SetBool(hintAnimatorParameters, false);
+        //}
+
+        //if (hintAnimator.GetBool(hintAnimatorParameters) == false)
+        //{
+        //    hintAnimator.SetBool(hintAnimatorParameters, true);
+        //}
+
+        //IsAnim = false;
 
         if (anim != null)
         {

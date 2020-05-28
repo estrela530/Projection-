@@ -2307,6 +2307,7 @@ MonoBehaviour:
   startSeconds: 0
   animator: {fileID: 1926215124}
   isStart: 0
+  animName: 
 --- !u!4 &638219045
 Transform:
   m_ObjectHideFlags: 0
