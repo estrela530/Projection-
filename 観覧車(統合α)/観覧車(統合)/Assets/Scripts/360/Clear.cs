@@ -7,7 +7,7 @@ public class Clear : MonoBehaviour
     [Header("各角度どれくらいかの設定")]
     [Space(-10)]
     [SerializeField, Header("正解の憑依物の角度誤差±いくつまで許容するか")]
-    float errorRangePossession;
+    Vector3 errorRangePossession;
 
     [SerializeField, Header("正解の憑依物の角度")]
     Vector3 answerPossessionAngle;
@@ -69,8 +69,23 @@ public class Clear : MonoBehaviour
 
     bool PossessionJudge()
     {
-        var answer_rot = Quaternion.Euler(answerPossessionAngle);
-        if (Quaternion.Angle(possession.transform.rotation, answer_rot) <= errorRangePossession)
+        bool isClearX = false;
+        bool isClearY = false;
+        bool isClearZ = false;
+        if (Mathf.Abs(possession.transform.rotation.x - answerPossessionAngle.x) < errorRangePossession.x)
+        {
+            isClearX = true;
+        }
+        if (Mathf.Abs(possession.transform.rotation.y - answerPossessionAngle.y) < errorRangePossession.y)
+        {
+            isClearY = true;
+        }
+        if (Mathf.Abs(possession.transform.rotation.z - answerPossessionAngle.z) < errorRangePossession.z)
+        {
+            isClearZ = true;
+        }
+
+        if (isClearX && isClearY && isClearZ)
         {
             return true;
         }
