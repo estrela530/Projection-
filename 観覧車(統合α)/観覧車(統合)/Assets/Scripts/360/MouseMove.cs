@@ -23,9 +23,10 @@ public class MouseMove : MonoBehaviour
 
     [SerializeField]
     Light soulLight;
-    
 
-    [SerializeField,Header("遠いところでのLightのRangeの値")]
+    float noise;
+
+    [SerializeField, Header("遠いところでのLightのRangeの値")]
     float maxRange = 160;
     [SerializeField, Header("遠いところでのLightのAngleの値")]
     float maxAngle = 136;
@@ -36,11 +37,11 @@ public class MouseMove : MonoBehaviour
 
     //最近と最遠のX座標の距離の差
     float farNearDistance;
-    
+
     //LightのRangeの値
     float rangeDistance;
     float rangePercent;
-    
+
     //LightのAngleの値
     float angleDistance;
     float anglePercent;
@@ -76,9 +77,9 @@ public class MouseMove : MonoBehaviour
         if (canMove)
         {
             Move();
-            SetLightRangeAngle();
         }
 
+        SetLightRangeAngle();
 
     }
 
@@ -124,9 +125,10 @@ public class MouseMove : MonoBehaviour
     void SetLightRangeAngle()
     {
         float percent = GetPercent();
+        noise = (Mathf.PerlinNoise(Time.time * 1.2f, 0) - 0.5f) * 20;
 
         soulLight.range = rangePercent * percent + minRange;
-        soulLight.spotAngle = anglePercent * percent + minAngle;
+        soulLight.spotAngle = anglePercent * percent + minAngle + noise;
     }
 
 

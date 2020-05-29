@@ -573,7 +573,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117460320}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae6ea3f7e8d772644b6fd47d4e411899, type: 3}
   m_Name: 
@@ -1093,8 +1093,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetAnimator: {fileID: 6899172105108491480}
   titleAnimator: {fileID: 1172148346}
+  hintAnimator: {fileID: 0}
   resetAnimatorParameters: Open
   titleAnimatorParameters: Open
+  hintOpenAnimatorParameters: 
+  hintAnimatorParameters: 
   clear: {fileID: 2257423317186569323}
   anim: {fileID: 466594345}
 --- !u!114 &466594345
@@ -4522,7 +4525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2257423316840217095
 Transform:
   m_ObjectHideFlags: 0
@@ -4602,7 +4605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 360
+  errorRangePossession: {x: 0, y: 0, z: 0}
   answerPossessionAngle: {x: 0, y: 0, z: 0}
   answerSoulAngleX: 360
   answerSoulMoveX: -338
@@ -4610,7 +4613,10 @@ MonoBehaviour:
   errorRangeSoulMoveX: 500
   possession: {fileID: 1597058125}
   soul: {fileID: 1390540035}
-  ClearCanvas: {fileID: 2257423316140624740}
+  lig: {fileID: 0}
+  isClear: 0
+  clearPosition: {x: 0, y: 0, z: 0}
+  soulAnimator: {fileID: 0}
 --- !u!4 &6899172103372632640
 Transform:
   m_ObjectHideFlags: 0
