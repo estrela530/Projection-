@@ -36,6 +36,9 @@ public class Clear : MonoBehaviour
 
     public bool isClear;
     public Vector3 clearPosition;
+
+    [SerializeField, Header("HitodamaAnimator")]
+    Animator soulAnimator;
     
 
     // Start is called before the first frame update
@@ -43,6 +46,8 @@ public class Clear : MonoBehaviour
     {
         isClear = false;
         clearPosition = new Vector3(0, 0, 0);
+
+        soulAnimator.enabled = false;
     }
 
     // Update is called once per frame
@@ -53,10 +58,7 @@ public class Clear : MonoBehaviour
         {
             isClear = true;
             lig.transform.parent = null;
-        }
-        else
-        {
-            isClear = false;
+            soulAnimator.enabled = true;
         }
 
 
@@ -64,6 +66,12 @@ public class Clear : MonoBehaviour
         if (!isClear)
         {
             clearPosition = transform.position;
+        }
+        else
+        {
+            isClear = true;
+            lig.transform.parent = null;
+            soulAnimator.enabled = true;
         }
     }
 
