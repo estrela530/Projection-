@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: "Assets/Scenes/\u30BF\u30A4\u30C8\u30EB.unity"
     guid: 2578bffd6c4225744b502e0ab864918c
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Scenes/\u30BF\u30A4\u30C8\u30EBAnim.unity"
     guid: 60046e0e53c485444acad8f434f76227
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/StageSelect.unity
     guid: ea5b66054a457b849af4e754732aa9a2
   - enabled: 0
@@ -38,22 +38,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Manji.unity
     guid: 0ca3e6bfc0b80804d98e6237edf77379
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Scenes/\u9CE5\u5C45.unity"
     guid: ee4ee8e45edeb5844a6ae4d324f37b82
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Scenes/\u5BB6 1.unity"
     guid: 5f7adc7a33730454ea8be45d4b4de87d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/bell.unity
     guid: 9b780caf88362b44fbef5bef69c31fc0
   - enabled: 1
     path: Assets/Scenes/negiStage.unity
     guid: 802ddaf02bd8e01449ce1ec39d170d14
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Scenes/\u30CF\u30F3\u30DE\u30FC.unity"
     guid: fd64a27934b89d145ad41b5044b55a13
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Scenes/\u30B9\u30B3\u30C3\u30D7.unity"
     guid: 2264397d0107ad842ba3c98aea337d02
   - enabled: 0
