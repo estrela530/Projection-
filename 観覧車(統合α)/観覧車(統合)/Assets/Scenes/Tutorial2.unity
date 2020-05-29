@@ -4878,8 +4878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: {x: 98.2, y: 126.94, z: 79.9}
-  answerPossessionAngle: {x: 9.32, y: -102.63, z: 84.04}
+  errorRangePossession: {x: 5, y: 5, z: 5}
+  answerPossessionAngle: {x: 12.814, y: 77.84, z: 97.4}
   answerSoulAngleX: 1
   answerSoulMoveX: -338.8
   errorRangeSoulAngleX: 360
@@ -5480,7 +5480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281052652}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2999878, y: 6.119999, z: 1.8999939}
+  m_LocalPosition: {x: -0.2999878, y: 6.119999, z: 4.8}
   m_LocalScale: {x: 3, y: 3, z: 10}
   m_Children: []
   m_Father: {fileID: 964860362}
