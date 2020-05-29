@@ -3009,6 +3009,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1551422151}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &446159275 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 752074807290029592, guid: 882fc1cfb618dad428669185912f0870,
+    type: 3}
+  m_PrefabInstance: {fileID: 1551422151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &477007175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2487493942795569410, guid: 50a98a29a6152bd4fbef3f0721751143,
@@ -7742,6 +7748,7 @@ MonoBehaviour:
   lig: {fileID: 1853779792}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
+  soulAnimator: {fileID: 446159275}
 --- !u!114 &1619008650
 MonoBehaviour:
   m_ObjectHideFlags: 0
