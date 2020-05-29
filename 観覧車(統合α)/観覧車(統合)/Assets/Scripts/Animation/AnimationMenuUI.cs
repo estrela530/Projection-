@@ -13,7 +13,13 @@ public class AnimationMenuUI : MonoBehaviour
     [SerializeField]
     string animatorParameters;
 
-    
+    bool animBool;
+
+    private void Start()
+    {
+        animBool = false;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -27,6 +33,12 @@ public class AnimationMenuUI : MonoBehaviour
         if (Input.GetKeyDown(setKey))
         {
             animator.SetBool(animatorParameters, !animator.GetBool(animatorParameters));
+            animBool = animator.GetBool(animatorParameters);
         }
+    }
+
+    public bool GetAnimBool()
+    {
+        return animBool;
     }
 }

@@ -7,6 +7,9 @@ public class AnimationMenuUIButton : MonoBehaviour
     [SerializeField, Header("ResetCanvas")]
     Animator resetAnimator;
 
+    [SerializeField, Header("BackStageCanvas")]
+    Animator backStageAnimator;
+
     [SerializeField, Header("TitleCanvas")]
     Animator titleAnimator;
 
@@ -15,6 +18,9 @@ public class AnimationMenuUIButton : MonoBehaviour
 
     [SerializeField]
     string resetAnimatorParameters;
+
+    [SerializeField]
+    string backStageAnimatorParameters;
 
     [SerializeField]
     string titleAnimatorParameters;
@@ -43,11 +49,14 @@ public class AnimationMenuUIButton : MonoBehaviour
             Debug.Log("MenuUIButtonに足りていないものがあります");
             return;
         }
+        
 
-
-        if (!resetAnimator.GetBool(resetAnimatorParameters) && !titleAnimator.GetBool(titleAnimatorParameters) && !hintAnimator.GetBool(hintAnimatorParameters) && anim != null)
+        if (!anim.GetAnimBool())
         {
-            anim.enabled = true;
+            resetAnimator.SetBool(resetAnimatorParameters, false);
+            backStageAnimator.SetBool(resetAnimatorParameters, false);
+            titleAnimator.SetBool(titleAnimatorParameters, false);
+            hintAnimator.SetBool(hintAnimatorParameters, false);
         }
 
         if (clear.GetClearFlag())
@@ -57,33 +66,25 @@ public class AnimationMenuUIButton : MonoBehaviour
     }
 
 
+    public void BackStageButtonDown()
+    {
+        backStageAnimator.SetBool(backStageAnimatorParameters, true);
+    }
+
 
     public void ResetButtonDown()
     {
         resetAnimator.SetBool(resetAnimatorParameters, true);
-
-
-        if (anim != null)
-        {
-            anim.enabled = false;
-        }
     }
 
 
     public void TitleButtonDown()
     {
         titleAnimator.SetBool(titleAnimatorParameters, true);
-
-        if (anim != null)
-        {
-            anim.enabled = false;
-        }
     }
 
     public void HintButtonDown()
     {
-        Debug.Log("Hintボタン押されたよ");
-
         switch (hintAnimator.GetBool(hintAnimatorParameters))
         {
             case true:
@@ -92,42 +93,6 @@ public class AnimationMenuUIButton : MonoBehaviour
             case false:
                 hintAnimator.SetBool(hintAnimatorParameters, true);
                 break;
-        }
-
-        //if (hintAnimator.GetBool(hintAnimatorParameters) == true)
-        //{
-        //    hint = 0;
-        //}
-        //else if (hintAnimator.GetBool(hintAnimatorParameters) == false)
-        //{
-        //    hint = 1;
-        //}
-
-        //switch (hint)
-        //{
-        //    case 0:
-        //        hintAnimator.SetBool(hintAnimatorParameters, false);
-        //        break;
-        //    case 1:
-        //        hintAnimator.SetBool(hintAnimatorParameters, true);
-        //        break;
-        //}
-
-        //if (hintAnimator.GetBool(hintAnimatorParameters) == true)
-        //{
-        //    hintAnimator.SetBool(hintAnimatorParameters, false);
-        //}
-
-        //if (hintAnimator.GetBool(hintAnimatorParameters) == false)
-        //{
-        //    hintAnimator.SetBool(hintAnimatorParameters, true);
-        //}
-
-        //IsAnim = false;
-
-        if (anim != null)
-        {
-            anim.enabled = false;
         }
     }
 }
