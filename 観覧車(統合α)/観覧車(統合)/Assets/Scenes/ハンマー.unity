@@ -3680,7 +3680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 5
+  errorRangePossession: {x: 0, y: 0, z: 0}
   answerPossessionAngle: {x: 16.48, y: 357.01, z: 4.6}
   answerSoulAngleX: 0
   answerSoulMoveX: -338.1592
@@ -5317,11 +5317,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec747e04a30dab043802065b06431e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: -2.55
-  scatterDensity: 1
-  SampleCount: 8
+  intensity: -3.03
+  scatterDensity: 0.75
+  SampleCount: 64
   SkyboxExtinctionCoef: 0.9
-  MieG: 0.1
+  MieG: 0
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -8049,7 +8049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 2
+  errorRangePossession: {x: 0, y: 0, z: 0}
   answerPossessionAngle: {x: 16.48, y: 357.01, z: 4.6}
   answerSoulAngleX: 0
   answerSoulMoveX: -338.1592
@@ -8886,5 +8886,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1456289693991231249, guid: 798dda3ccff6e864c805b42215b5083c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 449f4fe694054704a900702e249e1355, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 798dda3ccff6e864c805b42215b5083c, type: 3}

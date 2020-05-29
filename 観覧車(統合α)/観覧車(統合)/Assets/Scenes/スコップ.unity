@@ -397,6 +397,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 752074807239279391, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 449f4fe694054704a900702e249e1355, type: 2}
     - target: {fileID: 752074807290029588, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: cl
@@ -2565,7 +2570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 8
+  errorRangePossession: {x: 0, y: 0, z: 0}
   answerPossessionAngle: {x: -3.98, y: -7.23, z: 0.38}
   answerSoulAngleX: -34.6
   answerSoulMoveX: -321.1
@@ -7512,6 +7517,7 @@ MonoBehaviour:
   hintAnimatorParameters: 
   clear: {fileID: 749169661}
   anim: {fileID: 2018421186}
+  count: 0
 --- !u!1 &2086675867
 GameObject:
   m_ObjectHideFlags: 0
