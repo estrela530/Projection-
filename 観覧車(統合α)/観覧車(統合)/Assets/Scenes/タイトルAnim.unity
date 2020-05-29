@@ -6837,6 +6837,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 752074805878677118, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 124
+      objectReference: {fileID: 0}
+    - target: {fileID: 752074805878677118, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 752074805878677118, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 752074805878677118, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: m_Range
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 752074807290029588, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: animName
@@ -6857,6 +6877,16 @@ PrefabInstance:
       propertyPath: farBlock
       value: 
       objectReference: {fileID: 1641487447}
+    - target: {fileID: 752074807290029589, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: maxAngle
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 752074807290029589, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: minAngle
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 752074807290029592, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: m_Controller
@@ -6865,17 +6895,17 @@ PrefabInstance:
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -338.15924
+      value: -349.2
       objectReference: {fileID: 0}
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 27.4
       objectReference: {fileID: 0}
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 334.2552
+      value: 339.5
       objectReference: {fileID: 0}
     - target: {fileID: 752074807290029594, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
@@ -7388,7 +7418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: 360
+  errorRangePossession: {x: 0, y: 0, z: 0}
   answerPossessionAngle: {x: 0, y: 0, z: 0}
   answerSoulAngleX: 360
   answerSoulMoveX: -338
@@ -7399,6 +7429,7 @@ MonoBehaviour:
   lig: {fileID: 0}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
+  soulAnimator: {fileID: 0}
 --- !u!65 &2315253158448769451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7433,6 +7464,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 559459538}
     m_Modifications:
+    - target: {fileID: 3783221593790081605, guid: e872ceefd38ce884a8f1d0a34ae58d1a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 49.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783221593790081605, guid: e872ceefd38ce884a8f1d0a34ae58d1a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -380
+      objectReference: {fileID: 0}
     - target: {fileID: 6229193906479706177, guid: e872ceefd38ce884a8f1d0a34ae58d1a,
         type: 3}
       propertyPath: m_LocalPosition.x
