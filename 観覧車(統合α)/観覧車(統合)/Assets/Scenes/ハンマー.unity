@@ -134,7 +134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 492030, guid: da76261af08665847a0e8746d6026926, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -417.5
+      value: -418.5
       objectReference: {fileID: 0}
     - target: {fileID: 492030, guid: da76261af08665847a0e8746d6026926, type: 3}
       propertyPath: m_LocalPosition.y
@@ -142,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 492030, guid: da76261af08665847a0e8746d6026926, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 365.4
+      value: 458.3
       objectReference: {fileID: 0}
     - target: {fileID: 492030, guid: da76261af08665847a0e8746d6026926, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1808,7 +1808,7 @@ PrefabInstance:
     - target: {fileID: 4445837312200107585, guid: 5a5812b7284fe9942b71500bd99ac4e6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4445837312200107585, guid: 5a5812b7284fe9942b71500bd99ac4e6,
         type: 3}
@@ -3680,7 +3680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: {x: 0, y: 0, z: 0}
+  errorRangePossession: {x: 2.5, y: 2, z: 2.5}
   answerPossessionAngle: {x: 16.48, y: 357.01, z: 4.6}
   answerSoulAngleX: 0
   answerSoulMoveX: -338.1592
@@ -3691,6 +3691,7 @@ MonoBehaviour:
   lig: {fileID: 752074807013819086}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
+  soulAnimator: {fileID: 752074806156196526}
 --- !u!114 &662147581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3766,7 +3767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456110, guid: 70c3dab1aeae2324796d1e0955acb5c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -421.4
+      value: -422.4
       objectReference: {fileID: 0}
     - target: {fileID: 456110, guid: 70c3dab1aeae2324796d1e0955acb5c2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3774,7 +3775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456110, guid: 70c3dab1aeae2324796d1e0955acb5c2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 426.7
+      value: 519.6
       objectReference: {fileID: 0}
     - target: {fileID: 456110, guid: 70c3dab1aeae2324796d1e0955acb5c2, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8060,6 +8061,7 @@ MonoBehaviour:
   lig: {fileID: 752074807013819086}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
+  soulAnimator: {fileID: 0}
 --- !u!114 &1967456305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8774,6 +8776,12 @@ CanvasRenderer:
 --- !u!1 &752074806156196525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1456289693974313489, guid: 798dda3ccff6e864c805b42215b5083c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2187113139342098620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &752074806156196526 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1456289693974313494, guid: 798dda3ccff6e864c805b42215b5083c,
     type: 3}
   m_PrefabInstance: {fileID: 2187113139342098620}
   m_PrefabAsset: {fileID: 0}
