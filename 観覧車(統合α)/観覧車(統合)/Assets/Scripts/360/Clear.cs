@@ -40,6 +40,9 @@ public class Clear : MonoBehaviour
     [SerializeField, Header("HitodamaAnimator")]
     Animator soulAnimator;
     
+    bool isClearX = false;
+    bool isClearY = false;
+    bool isClearZ = false;
 
     // Start is called before the first frame update
     void Start()
@@ -77,20 +80,30 @@ public class Clear : MonoBehaviour
 
     bool PossessionJudge()
     {
-        bool isClearX = false;
-        bool isClearY = false;
-        bool isClearZ = false;
-        if (Mathf.Abs(possession.transform.rotation.x - answerPossessionAngle.x) < errorRangePossession.x)
+        Debug.Log(Mathf.Abs(possession.transform.localEulerAngles.x));
+        if (Mathf.Abs(possession.transform.localEulerAngles.x - answerPossessionAngle.x) < errorRangePossession.x)
         {
             isClearX = true;
         }
-        if (Mathf.Abs(possession.transform.rotation.y - answerPossessionAngle.y) < errorRangePossession.y)
+        else
+        {
+            isClearX = false;
+        }
+        if (Mathf.Abs(possession.transform.localEulerAngles.y - answerPossessionAngle.y) < errorRangePossession.y)
         {
             isClearY = true;
         }
-        if (Mathf.Abs(possession.transform.rotation.z - answerPossessionAngle.z) < errorRangePossession.z)
+        else
+        {
+            isClearY = false;
+        }
+        if (Mathf.Abs(possession.transform.localEulerAngles.z - answerPossessionAngle.z) < errorRangePossession.z)
         {
             isClearZ = true;
+        }
+        else
+        {
+            isClearZ = false;
         }
 
         if (isClearX && isClearY && isClearZ)
@@ -104,7 +117,7 @@ public class Clear : MonoBehaviour
 
     bool SoulAngleJudge()
     {
-        if (Mathf.Abs(soul.transform.rotation.x - answerSoulAngleX) < errorRangeSoulAngleX)
+        if (Mathf.Abs(soul.transform.localEulerAngles.x - answerSoulAngleX) < errorRangeSoulAngleX)
         {
             return true;
         }

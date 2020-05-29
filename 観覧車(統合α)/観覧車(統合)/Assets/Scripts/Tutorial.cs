@@ -15,9 +15,6 @@ public class Tutorial : MonoBehaviour
 
     [SerializeField, Header("この時間にtext2を表示")]
     float Tri2;
-
-    [SerializeField, Header("この時間にtext3を表示")]
-    float Tri3;
     
     [SerializeField, Header("Textをいれる")]
     GameObject Text;
@@ -27,9 +24,6 @@ public class Tutorial : MonoBehaviour
 
     [SerializeField, Header("Text2をいれる")]
     GameObject Text2;
-
-    [SerializeField, Header("Text3をいれる")]
-    GameObject Text3;
     
     int a;
 
@@ -75,12 +69,6 @@ public class Tutorial : MonoBehaviour
             Text2.SetActive(true);
             stop = true;
         }
-        //text3を表示
-        if (timer >= Tri3)
-        {
-            Text2.SetActive(false);
-            Text3.SetActive(true);
-            stop = true;
-        }
+        
     }
 }
