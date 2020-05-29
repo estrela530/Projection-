@@ -526,6 +526,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 752074807239279391, guid: 882fc1cfb618dad428669185912f0870,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 449f4fe694054704a900702e249e1355, type: 2}
     - target: {fileID: 752074807290029588, guid: 882fc1cfb618dad428669185912f0870,
         type: 3}
       propertyPath: cl
@@ -8036,6 +8041,7 @@ MonoBehaviour:
   hintAnimatorParameters: HintOpen
   clear: {fileID: 749169661}
   anim: {fileID: 2018421186}
+  count: 0
 --- !u!1 &2086675867
 GameObject:
   m_ObjectHideFlags: 0
