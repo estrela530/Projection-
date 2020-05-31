@@ -2817,7 +2817,7 @@ RectTransform:
   m_GameObject: {fileID: 942612359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 505822076}
   - {fileID: 2076872875}
@@ -3515,7 +3515,7 @@ RectTransform:
   m_GameObject: {fileID: 1343374388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 878967369}
   - {fileID: 639226772}
@@ -6606,7 +6606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2257423316140624741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6877,9 +6877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: {x: 0, y: 0, z: 0}
-  answerPossessionAngle: {x: 0, y: 0, z: 90}
-  answerSoulAngleX: 0
+  errorRangePossession: {x: 5, y: 5, z: 10}
+  answerPossessionAngle: {x: 3, y: -5, z: 87}
+  answerSoulAngleX: 4
   answerSoulMoveX: -327
   errorRangeSoulAngleX: 5
   errorRangeSoulMoveX: 10
@@ -6889,6 +6889,9 @@ MonoBehaviour:
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
   soulAnimator: {fileID: 7059477957548319418}
+  isClearX: 0
+  isClearY: 0
+  isClearZ: 0
 --- !u!33 &2383674615700454617
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7116,14 +7119,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4445837310945084828}
-  m_LocalRotation: {x: 0.5198367, y: -0.34618863, z: 0.742404, w: 0.24240384}
+  m_LocalRotation: {x: -0.012340746, y: -0.04932527, z: 0.7069991, w: 0.7053843}
   m_LocalPosition: {x: -357.5, y: -5.2, z: 335.3}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 3710710888040016534}
   m_Father: {fileID: 0}
   m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 50, y: 70, z: 180}
+  m_LocalEulerAnglesHint: {x: 3, y: -5, z: 90}
 --- !u!4 &5123268408028628308
 Transform:
   m_ObjectHideFlags: 0

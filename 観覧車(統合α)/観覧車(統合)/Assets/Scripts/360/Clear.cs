@@ -39,10 +39,14 @@ public class Clear : MonoBehaviour
 
     [SerializeField, Header("HitodamaAnimator")]
     Animator soulAnimator;
-    
+
+    [SerializeField]
     bool isClearX = false;
+    [SerializeField]
     bool isClearY = false;
+    [SerializeField]
     bool isClearZ = false;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +55,10 @@ public class Clear : MonoBehaviour
         clearPosition = new Vector3(0, 0, 0);
 
         soulAnimator.enabled = false;
+
+        isClearX = false;
+        isClearY = false;
+        isClearZ = false;
     }
 
     // Update is called once per frame
@@ -75,13 +83,22 @@ public class Clear : MonoBehaviour
             isClear = true;
             lig.transform.parent = null;
             soulAnimator.enabled = true;
+            PossetionRotation();
+
+            soul.GetComponent<MouseMove>().enabled = false;
         }
     }
 
     bool PossessionJudge()
     {
-        Debug.Log(Mathf.Abs(possession.transform.localEulerAngles.x));
-        if (Mathf.Abs(possession.transform.localEulerAngles.x - answerPossessionAngle.x) < errorRangePossession.x)
+        var target = possession.transform.localEulerAngles;
+        if (target.x > 180) target.x -= 360;
+        if (target.y > 180) target.y -= 360;
+        if (target.z > 180) target.z -= 360;
+        
+
+        if (Mathf.Abs(target.x - answerPossessionAngle.x) < errorRangePossession.x ||
+            Mathf.Abs(possession.transform.localEulerAngles.x - answerPossessionAngle.x) < errorRangePossession.x)
         {
             isClearX = true;
         }
@@ -89,7 +106,8 @@ public class Clear : MonoBehaviour
         {
             isClearX = false;
         }
-        if (Mathf.Abs(possession.transform.localEulerAngles.y - answerPossessionAngle.y) < errorRangePossession.y)
+        if (Mathf.Abs(target.y - answerPossessionAngle.y) < errorRangePossession.y ||
+            Mathf.Abs(possession.transform.localEulerAngles.y - answerPossessionAngle.y) < errorRangePossession.y)
         {
             isClearY = true;
         }
@@ -97,7 +115,8 @@ public class Clear : MonoBehaviour
         {
             isClearY = false;
         }
-        if (Mathf.Abs(possession.transform.localEulerAngles.z - answerPossessionAngle.z) < errorRangePossession.z)
+        if (Mathf.Abs(target.z - answerPossessionAngle.z) < errorRangePossession.z ||
+            Mathf.Abs(possession.transform.localEulerAngles.z - answerPossessionAngle.z) < errorRangePossession.z)
         {
             isClearZ = true;
         }
@@ -139,5 +158,28 @@ public class Clear : MonoBehaviour
     public bool GetClearFlag()
     {
         return isClear;
+    }
+
+    void PossetionRotation()
+    {
+
+        var target = Quaternion.Euler(answerPossessionAngle);
+
+
+        var now_rot = possession.transform.rotation;
+
+        if (Quaternion.Angle(now_rot, target) <= 1)
+        {
+            transform.rotation = target;
+            return;
+        }
+
+        possession.transform.Rotate(
+            new Vector3(
+                Time.deltaTime * (target.x - now_rot.x) * 1000,
+                Time.deltaTime * (target.y - now_rot.y) * 1000,
+                Time.deltaTime * (target.z - now_rot.z) * 1000
+                ));
+
     }
 }
