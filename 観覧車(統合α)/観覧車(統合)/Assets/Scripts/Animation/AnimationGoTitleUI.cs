@@ -17,7 +17,7 @@ public class AnimationGoTitleUI : MonoBehaviour
 
     private void Start()
     {
-        sceneName = "タイトル";
+        sceneName = "タイトルAnim";
     }
 
     // Update is called once per frame
