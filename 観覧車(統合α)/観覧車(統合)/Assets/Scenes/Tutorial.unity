@@ -694,6 +694,10 @@ MonoBehaviour:
   lig: {fileID: 1411602121}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
+  soulAnimator: {fileID: 0}
+  isClearX: 0
+  isClearY: 0
+  isClearZ: 0
 --- !u!114 &120213882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4125,9 +4129,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetAnimator: {fileID: 436195100}
+  backStageAnimator: {fileID: 0}
   titleAnimator: {fileID: 990616194}
   hintAnimator: {fileID: 0}
   resetAnimatorParameters: Open
+  backStageAnimatorParameters: 
   titleAnimatorParameters: Open
   hintOpenAnimatorParameters: 
   hintAnimatorParameters: 
@@ -5463,11 +5469,9 @@ MonoBehaviour:
   Tri: 1
   Tri1: 5
   Tri2: 9
-  Tri3: 15
   Text: {fileID: 2078641135}
   Text1: {fileID: 448657966}
   Text2: {fileID: 1530574777}
-  Text3: {fileID: 2832000}
 --- !u!1 &1091719439
 GameObject:
   m_ObjectHideFlags: 0
@@ -6934,6 +6938,11 @@ PrefabInstance:
       propertyPath: farBlock
       value: 
       objectReference: {fileID: 1850601259}
+    - target: {fileID: 1456289693991231249, guid: 798dda3ccff6e864c805b42215b5083c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 449f4fe694054704a900702e249e1355, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 798dda3ccff6e864c805b42215b5083c, type: 3}
 --- !u!1 &1411602120 stripped
