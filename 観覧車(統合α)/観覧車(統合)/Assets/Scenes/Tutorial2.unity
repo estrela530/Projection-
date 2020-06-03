@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9c8635a47d78d3840aaca493eafeb832, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1605,7 +1605,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: af478f79451d6e8489573c2653e61128, type: 2}
+  - {fileID: 2100000, guid: 92033190db78c4620b849a70268085f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2711,7 +2711,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: af478f79451d6e8489573c2653e61128, type: 2}
+  - {fileID: 2100000, guid: 1577a8c6541480849a70f5e8c3147b6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3021,7 +3021,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7172675f5671f49b41784990ca123b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39ca5df00fd81834e9c76e1d6b74ae9e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4538,9 +4538,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetAnimator: {fileID: 867727735}
+  backStageAnimator: {fileID: 0}
   titleAnimator: {fileID: 42437970}
   hintAnimator: {fileID: 0}
   resetAnimatorParameters: Open
+  backStageAnimatorParameters: 
   titleAnimatorParameters: Open
   hintOpenAnimatorParameters: 
   hintAnimatorParameters: 
@@ -5082,6 +5084,9 @@ MonoBehaviour:
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
   soulAnimator: {fileID: 1528406212}
+  isClearX: 0
+  isClearY: 0
+  isClearZ: 0
 --- !u!114 &1210137379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7301,7 +7306,7 @@ Camera:
   m_GameObject: {fileID: 1690264520}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.21315405, g: 0.3584906, b: 0.2012282, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
