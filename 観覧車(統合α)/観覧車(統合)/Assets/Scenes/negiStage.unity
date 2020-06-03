@@ -6352,8 +6352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: {x: 0, y: 0, z: 0}
-  answerPossessionAngle: {x: -5, y: 34, z: 87}
+  errorRangePossession: {x: 5, y: 6, z: 5}
+  answerPossessionAngle: {x: -5, y: 20, z: 93}
   answerSoulAngleX: 360
   answerSoulMoveX: -312
   errorRangeSoulAngleX: 360
@@ -6363,7 +6363,10 @@ MonoBehaviour:
   lig: {fileID: 6234756097083836054}
   isClear: 1
   clearPosition: {x: 0, y: 0, z: 0}
-  soulAnimator: {fileID: 0}
+  soulAnimator: {fileID: 6234756097924906738}
+  isClearX: 0
+  isClearY: 0
+  isClearZ: 0
 --- !u!33 &2608987976581377639
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6893,7 +6896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 051d26e4e732c674bacad15973fdc57b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c1b673be9de74d040ad66fc445209b4f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7964,7 +7967,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6234756097924906741}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edd47d267b2002e4188e121b6608f0bb, type: 3}
   m_Name: 

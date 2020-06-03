@@ -37,6 +37,9 @@ public class Clear : MonoBehaviour
     public bool isClear;
     public Vector3 clearPosition;
 
+    float clearTime = 0.5f;
+    float nowTime = 0;
+
     [SerializeField, Header("HitodamaAnimator")]
     Animator soulAnimator;
 
@@ -67,12 +70,19 @@ public class Clear : MonoBehaviour
 
         if (PossessionJudge() && SoulAngleJudge() && SoulMoveJudge())
         {
-            isClear = true;
-            lig.transform.parent = null;
-            soulAnimator.enabled = true;
+            nowTime += Time.deltaTime;
+            //lig.transform.parent = null;
+            //soulAnimator.enabled = true;
         }
 
-
+        else
+        {
+            nowTime = 0;
+        }
+        if (nowTime >= clearTime)
+        {
+            isClear = true;
+        }
 
         if (!isClear)
         {
@@ -83,7 +93,7 @@ public class Clear : MonoBehaviour
             isClear = true;
             lig.transform.parent = null;
             soulAnimator.enabled = true;
-            PossetionRotation();
+            //PossetionRotation();
 
             soul.GetComponent<MouseMove>().enabled = false;
         }

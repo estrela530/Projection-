@@ -7724,7 +7724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 838235885}
-  animatorParameters: Open
+  animatorParameters: OpenTrigger
   nextScene: 3
   titleScene: 0
   stageScene: 1
@@ -7741,18 +7741,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: {x: 0, y: 0, z: 0}
-  answerPossessionAngle: {x: -74, y: 111, z: 14}
-  answerSoulAngleX: 0
-  answerSoulMoveX: -338
-  errorRangeSoulAngleX: 90
-  errorRangeSoulMoveX: 100
+  errorRangePossession: {x: 1, y: 1, z: 1}
+  answerPossessionAngle: {x: 0, y: 0, z: 7}
+  answerSoulAngleX: 17
+  answerSoulMoveX: -337
+  errorRangeSoulAngleX: 2
+  errorRangeSoulMoveX: 0.2
   possession: {fileID: 1908873229}
   soul: {fileID: 446159274}
   lig: {fileID: 1853779792}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
   soulAnimator: {fileID: 446159275}
+  isClearX: 0
+  isClearY: 0
+  isClearZ: 0
 --- !u!114 &1619008650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10469,7 +10472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 051d26e4e732c674bacad15973fdc57b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c1b673be9de74d040ad66fc445209b4f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

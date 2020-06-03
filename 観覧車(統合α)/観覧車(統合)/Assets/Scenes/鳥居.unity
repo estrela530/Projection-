@@ -360,18 +360,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: {x: 0, y: 0, z: 0}
-  answerPossessionAngle: {x: 0, y: 4.5, z: 0.1}
+  errorRangePossession: {x: 1, y: 1, z: 1}
+  answerPossessionAngle: {x: 0, y: 0, z: 0}
   answerSoulAngleX: 74
-  answerSoulMoveX: -316
-  errorRangeSoulAngleX: 1000
-  errorRangeSoulMoveX: 1000
+  answerSoulMoveX: -338.1592
+  errorRangeSoulAngleX: 1
+  errorRangeSoulMoveX: 1
   possession: {fileID: 992499084}
   soul: {fileID: 402710126}
   lig: {fileID: 109778038}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
   soulAnimator: {fileID: 0}
+  isClearX: 0
+  isClearY: 0
+  isClearZ: 0
 --- !u!114 &10021563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13931,7 +13934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 051d26e4e732c674bacad15973fdc57b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 818b3878749ffdd4092c4d6e3a2a59bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
