@@ -1497,9 +1497,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetAnimator: {fileID: 6899172105108491480}
+  backStageAnimator: {fileID: 0}
   titleAnimator: {fileID: 1172148346}
   hintAnimator: {fileID: 0}
   resetAnimatorParameters: Open
+  backStageAnimatorParameters: 
   titleAnimatorParameters: Open
   hintOpenAnimatorParameters: 
   hintAnimatorParameters: 
@@ -5548,7 +5550,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 224, y: 98}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 150, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748908293
 MonoBehaviour:
@@ -5622,7 +5624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 76a2136b4c46b5546ae183252ca60ee1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d9aac4cf9a3592479e319e8f6bac022, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5893,8 +5895,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222, y: 178}
-  m_SizeDelta: {x: 160, y: 55}
+  m_AnchoredPosition: {x: 225.6, y: 178}
+  m_SizeDelta: {x: 175, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835200340
 MonoBehaviour:
@@ -6316,7 +6318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1981957319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7435,6 +7437,9 @@ MonoBehaviour:
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
   soulAnimator: {fileID: 0}
+  isClearX: 0
+  isClearY: 0
+  isClearZ: 0
 --- !u!65 &2315253158448769451
 BoxCollider:
   m_ObjectHideFlags: 0
