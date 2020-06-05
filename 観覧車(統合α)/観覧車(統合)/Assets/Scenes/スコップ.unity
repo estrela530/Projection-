@@ -2827,6 +2827,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 169013985}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &602563340 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 752074807290029592, guid: 882fc1cfb618dad428669185912f0870,
+    type: 3}
+  m_PrefabInstance: {fileID: 169013985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &620481819
 GameObject:
   m_ObjectHideFlags: 0
@@ -3219,18 +3225,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c585436c06d5e43aeb6e77a2d9ef8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorRangePossession: {x: 0, y: 0, z: 0}
-  answerPossessionAngle: {x: -3.98, y: -7.23, z: 0.38}
-  answerSoulAngleX: -34.6
+  errorRangePossession: {x: 6, y: 6, z: 6}
+  answerPossessionAngle: {x: 1.17, y: 4.204, z: 356.36}
+  answerSoulAngleX: 338.17
   answerSoulMoveX: -321.1
-  errorRangeSoulAngleX: 360
+  errorRangeSoulAngleX: 5
   errorRangeSoulMoveX: 10
   possession: {fileID: 1830355465}
   soul: {fileID: 602563339}
   lig: {fileID: 99681942}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
-  soulAnimator: {fileID: 0}
+  soulAnimator: {fileID: 602563340}
   isClearX: 0
   isClearY: 0
   isClearZ: 0
