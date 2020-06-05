@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/KanDAISUKE.unity
     guid: ffb2d7a13c6336641b8f15c1d2710ba6
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1.unity
+    guid: ed30e52c7c0a50b4f93998c4460e640a
+  - enabled: 1
+    path: Assets/Scenes/Tutorial2.unity
+    guid: bc8cae794b3ef6846ba341d07a9d8f15
   m_configObjects: {}
