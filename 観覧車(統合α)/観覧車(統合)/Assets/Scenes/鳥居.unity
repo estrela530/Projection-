@@ -371,7 +371,7 @@ MonoBehaviour:
   lig: {fileID: 109778038}
   isClear: 0
   clearPosition: {x: 0, y: 0, z: 0}
-  soulAnimator: {fileID: 0}
+  soulAnimator: {fileID: 402710128}
   isClearX: 0
   isClearY: 0
   isClearZ: 0
@@ -705,7 +705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.2, y: 11.9}
+  m_AnchoredPosition: {x: 0, y: -105}
   m_SizeDelta: {x: 150, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &88945504
@@ -2103,6 +2103,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 109778037}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &402710128 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 752074807290029592, guid: 882fc1cfb618dad428669185912f0870,
+    type: 3}
+  m_PrefabInstance: {fileID: 109778037}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &403183239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3469,7 +3475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -47.099987}
+  m_AnchoredPosition: {x: 0, y: 12}
   m_SizeDelta: {x: 150, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &580280240
@@ -4389,7 +4395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -106.69999}
+  m_AnchoredPosition: {x: 0, y: -47}
   m_SizeDelta: {x: 150, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782493550
@@ -4825,7 +4831,7 @@ MonoBehaviour:
   titleAnimatorParameters: Open
   hintOpenAnimatorParameters: 
   hintAnimatorParameters: HintOpen
-  clear: {fileID: 0}
+  clear: {fileID: 10021562}
   anim: {fileID: 849976124}
 --- !u!1001 &857030328
 PrefabInstance:
