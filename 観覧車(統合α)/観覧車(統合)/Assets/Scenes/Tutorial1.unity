@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9c8635a47d78d3840aaca493eafeb832, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -678,7 +678,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: af478f79451d6e8489573c2653e61128, type: 2}
+  - {fileID: 2100000, guid: 92033190db78c4620b849a70268085f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1147,6 +1147,7 @@ GameObject:
   - component: {fileID: 185641553}
   - component: {fileID: 185641552}
   - component: {fileID: 185641551}
+  - component: {fileID: 185641554}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1171,7 +1172,7 @@ Camera:
   m_GameObject: {fileID: 185641550}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.21315405, g: 0.3584906, b: 0.2012282, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1219,6 +1220,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 22.715, y: -33.771, z: -1.427}
+--- !u!114 &185641554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185641550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828a09ea22d932e41a403029e8cc855a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _material: {fileID: 2100000, guid: fb416c1a2af6e4098a8f83e52c72293a, type: 2}
 --- !u!1001 &208961719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8772,7 +8786,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: af478f79451d6e8489573c2653e61128, type: 2}
+  - {fileID: 2100000, guid: 5b4d85ec0a9107d4bad619dca053d66a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
